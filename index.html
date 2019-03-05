@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="//cdn.jsdelivr.net/npm/phaser-ce@2.12.0"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+		var game = new Phaser.Game(256, 240, Phaser.AUTO);
+		
+		var cursors, attack, item, pause;
+		
+		game.state.add("Boot", Boot);
+		game.state.add("Preload", Preload);
+		game.state.add("Dungeon", Dungeon);
+		game.state.add("Town", Town);
+		game.state.start("Boot");
+		</script>
+	</body>
+</html>
